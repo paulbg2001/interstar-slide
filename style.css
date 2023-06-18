@@ -1,255 +1,257 @@
 * {
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  body {
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  header{
-    width: 100%;
-    /* height: 100vh; */
-    background-color: rgb(72, 160, 243);
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .logo1{
-      position: fixed;
-      float: left;
-      margin-left: 20px;
-    }
+  list-style: none;
+  text-decoration: none;
+}
 
-  nav{
-    position: fixed;
-    width: 100%;
-    background-color: rgb(72, 160, 243);
-  }
-  header ul{
-    overflow: hidden;
-    text-align: center;
-    transition: 1s;
-  }
-  /* header.black ul{
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER NAVBAR */
+header {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: rgb(72, 160, 243);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.logo1 {
+  position: fixed;
+  float: left;
+  margin-left: 20px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(72, 160, 243);
+}
+header ul {
+  overflow: hidden;
+  text-align: center;
+  transition: 1s;
+}
+/* header.black ul{
     background: black;
   } */
-  
-  header ul li a{
-    font-size: 19px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
- 
-  .slider {
-    width: 1000px;
-    height: 720px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .slides {
-    width: 500%;
-    height: 500px;
-    display: flex;
-  }
-  .slides input {
-    display: none;
-  }
-  
-  .slide {
-    width: 20%;
-    transition: 2s;
-  }
-  .slide img {
-    width: 1000px;
-    height: 720px;
-  }
-  /* css for manual navigation */
-  
-  .navigation-manual {
-    position: absolute;
-    width: 800px;
-    margin-top: 160px;
-    display: flex;
-    justify-content: center;
-    margin-left: 105px;
-  }
-  
-  .manual-btn {
-    border: 2px solid rgb(248, 234, 30);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child) {
-    margin-right: 40px;
-  }
-  
-  .manual-btn:hover {
-    background-color: rgb(248, 234, 30);
-  }
-  
-  #radio1:checked ~ .first {
-    margin-left: 0;
-  }
-  #radio2:checked ~ .first {
-    margin-left: -20%;
-  }
-  #radio3:checked ~ .first {
-    margin-left: -40%;
-  }
-  #radio4:checked ~ .first {
-    margin-left: -60%;
-  }
-  
-  ul {
-    font-size: 20px;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-left: 400px;
-  }
-  li {
-    display: inline-block;
-    margin: 35px;
-  }
-  
-  #menu_btn:active {
-    color: rgb(248, 234, 30);
-  }
-  #menu_btn:visited {
-    color: rgb(248, 234, 30);
-  }
-  
-  /* .logo {
+
+header ul li a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+ul {
+  font-size: 20px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 400px;
+}
+li {
+  display: inline-block;
+  margin: 35px;
+}
+
+/* SLIDER PHOTO */
+
+.slider {
+  width: 1000px;
+  height: 720px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 1000px;
+  height: 720px;
+}
+/* css for manual navigation */
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  margin-left: 105px;
+}
+
+.manual-btn {
+  border: 2px solid rgb(248, 234, 30);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: rgb(248, 234, 30);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#menu_btn:active {
+  color: rgb(248, 234, 30);
+}
+#menu_btn:visited {
+  color: rgb(248, 234, 30);
+}
+
+/* .logo {
     margin-left: 220px;
   } */
-  
-  main section {
-    /* background-color: rgb(248, 234, 30); */
-    background-color: rgb(72, 160, 243);
-    text-align: center;
-  }
-  
-  #poza {
-    width: 863px;
-  }
-  main h1 {
-    text-align: center;
-    color: black;
-    font-size: 36px;
-    /* margin-bottom: 40px; */
-    margin-top: 10px;
-    text-transform: uppercase;
-    color: rgb(248, 234, 30)
-  }
-  
-  main p {
-    text-align: center;
-    width: 600px;
-    margin: auto;
-    font-size: 24px;
-  }
-  button {
-    background-color: rgb(48, 128, 247);
-    color: #fff;
-    border-radius: 5%;
-    border-color: rgb(48, 128, 247);
-    margin-top: 30px;
-    margin-bottom: 40px;
-    cursor: pointer;
-    padding: 10px 20px;
-  }
-  button span {
-    font-size: 25px;
-  }
-  button:hover {
-    background-color: rgb(199, 20, 20);
-    border-color: rgb(199, 20, 20);
-  }
-  
-  section {
-    padding-top: 50px;
-  }
-  section h2 {
-    text-align: center;
-    font-size: 36px;
-  }
-  section h3{
-    text-transform: uppercase;
-  }
-  section ul {
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: 30px;
-  }
-  section ul li {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    padding-left: 1%;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  
-  trainers h2 {
-    text-align: center;
-    font-size: 36px;
-  }
-  
-  trainers ul {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
-    margin-left: 30px;
-    margin-right: auto;
-  }
-  trainers ul li {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px 4px 4px 4px;
-  }
-  
-  trainers figcaption {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  trainers p {
-    margin-bottom: 40px;
-    font-weight: 400;
-    color: #757575;
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  footer {
-    display: flex;
-    /* background-color: rgb(248, 234, 30); */
-    background-color: rgb(72, 160, 243);
-    width: 100%;
-  }
-  .logo2{
-    margin-left: 20px;
-  }
-  footer ul li a {
-    color: rgb(248, 234, 30);
-    letter-spacing: 1px;
-  }
-  footer ul li {
-    font-size: 24px;
-    margin-top: 90px;
-  }
-  
+
+main section {
+  /* background-color: rgb(248, 234, 30); */
+  background-color: rgb(72, 160, 243);
+  text-align: center;
+}
+
+#poza {
+  width: 863px;
+}
+main h1 {
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  /* margin-bottom: 40px; */
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: rgb(248, 234, 30);
+}
+
+main p {
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  font-size: 24px;
+}
+button {
+  background-color: rgb(48, 128, 247);
+  color: #fff;
+  border-radius: 5%;
+  border-color: rgb(48, 128, 247);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+button span {
+  font-size: 25px;
+}
+button:hover {
+  background-color: rgb(199, 20, 20);
+  border-color: rgb(199, 20, 20);
+}
+
+section {
+  padding-top: 50px;
+}
+section h2 {
+  text-align: center;
+  font-size: 36px;
+}
+section h3 {
+  text-transform: uppercase;
+}
+section ul {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+section ul li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-left: 1%;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+trainers h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+trainers ul {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin-left: 30px;
+  margin-right: auto;
+}
+trainers ul li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px 4px 4px 4px;
+}
+
+trainers figcaption {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+trainers p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: #757575;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  /* background-color: rgb(248, 234, 30); */
+  background-color: rgb(72, 160, 243);
+  width: 100%;
+}
+.logo2 {
+  margin-left: 20px;
+}
+footer ul li a {
+  color: rgb(248, 234, 30);
+  letter-spacing: 1px;
+}
+footer ul li {
+  font-size: 24px;
+  margin-top: 90px;
+}
