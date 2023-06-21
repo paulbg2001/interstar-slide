@@ -18,15 +18,14 @@ header {
   background-color: rgb(72, 160, 243);
   background-size: cover;
   background-attachment: fixed;
+  position: fixed;
 }
 .logo1 {
-  position: fixed;
   float: left;
   margin-left: 20px;
 }
 
 nav {
-  position: fixed;
   width: 100%;
   background-color: rgb(72, 160, 243);
 }
@@ -34,6 +33,7 @@ header ul {
   overflow: hidden;
   text-align: center;
   transition: 1s;
+  margin-top: 10px;
 }
 /* header.black ul{
     background: black;
@@ -45,14 +45,11 @@ header ul li a {
   text-transform: uppercase;
 }
 
-ul {
+header ul {
   font-size: 20px;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-top: auto;
-  margin-left: 400px;
+  margin: auto;
 }
-li {
+header ul li {
   display: inline-block;
   margin: 35px;
 }
@@ -207,6 +204,7 @@ section ul li {
   padding-right: 10px;
   padding-bottom: 20px;
   padding-top: 20px;
+  margin: 15px 30px;
 }
 
 trainers h2 {
@@ -218,7 +216,7 @@ trainers ul {
   text-align: center;
   padding-bottom: 50px;
   margin-left: 30px;
-  margin-right: 30px;
+  margin-right: 40px;
   display: grid;
   grid-template-columns: repeat(4, auto);
 }
@@ -226,6 +224,7 @@ trainers ul li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px 4px 4px 4px;
+  margin: 15px 30px;
 }
 
 trainers figcaption {
@@ -247,6 +246,7 @@ footer {
   /* background-color: rgb(248, 234, 30); */
   background-color: rgb(72, 160, 243);
   width: 100%;
+  text-align: center;
 }
 .logo2 {
   margin-left: 20px;
@@ -258,6 +258,8 @@ footer ul li a {
 footer ul li {
   font-size: 24px;
   margin-top: 90px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 /* @media screen and (max-width: 1280px) {
